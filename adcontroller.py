@@ -1,3 +1,4 @@
+##
 ## A very low level AR.Drone2.0 Python controller
 ## by Micah Sherr
 ## (use at your own risk)
@@ -28,7 +29,7 @@ def setBits( lst ):
     """
     res = 0
     for b in lst + [18,20,22,24,28]:
-        res |= (1 &lt;&lt; b)
+        res |= (1 << b)
     return res
 
 
@@ -103,3 +104,4 @@ while True:
     else:
         print "Invalid command!"
         
+    
